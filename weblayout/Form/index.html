@@ -8,6 +8,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Сохраняем данные в форме</h1>
+      <form action="">
+        <!-- input -->
+        <div class="form-div">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            autocomplete="off"
+            placeholder="Username"
+          />
+        </div>
+        <div class="form-div">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            autocomplete="off"
+            placeholder="age"
+          />
+        </div>
+        <!-- select -->
+        <div class="form-div">
+          <label for="race">Race</label>
+          <select name="race" id="race">
+            <option value="1">Elf</option>
+            <option value="2">Human</option>
+            <option value="3">Dwarf</option>
+            <option value="4">Hobbit</option>
+            <option value="5">Ork</option>
+          </select>
+        </div>
+        <!-- radio -->
+        <div class="form-div">
+          <div class="form-div">Оружие</div>
+          <label for="sword">Sword</label>
+          <input type="radio" name="weapons" value="sword" id="sword" />
+
+          <label for="stick">stick</label>
+          <input type="radio" name="weapons" value="stick" id="stick" />
+
+          <label for="humer">humer</label>
+          <input type="radio" name="weapons" value="humer" id="humer" />
+        </div>
+        <!-- checkbox -->
+        <div class="form-div">
+          <label for="magic">magic</label>
+          <input type="checkbox" name="magic" id="magic" />
+        </div>
+
+        <div class="form-div">
+          <input type="submit" value="Отправить" />
+        </div>
+      </form>
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>
