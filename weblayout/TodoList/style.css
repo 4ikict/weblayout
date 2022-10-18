@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.block{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-text{
+  width: 100%;
+  padding: 10px;
+}
+
+#input-open{
+  padding: 10px;
+  background-color: rgb(20, 207, 20);
+  cursor: pointer;
+}
+
+#input-clear{
+  padding: 10px;
+  background-color: rgb(241, 24, 4);
+  cursor: pointer;
+}
+
+#lists{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  width: 100%;
+}
+
+.open-btn{
+  padding: 5px;
+  background-color: rgb(20, 207, 20);
+  cursor: pointer;
+}
+
+.clear-btn{
+  padding: 5px;
+  background-color: rgb(241, 24, 4);
+  cursor: pointer;
+}
+
+.green{
+  background-color: rgb(116, 236, 116);
+}

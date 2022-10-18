@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(formData);
   });
 
+  document.getElementById("open").addEventListener("click", function () {
+    LS.clear();
+  });
+
   //Востановление данных из LS, после перезагрузки страницы
 
   if (LS.getItem("formData")) {
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //form.elements[name]
     for (let key in formData) {
-      if (form.elements[key].type === "checkbox" && formData[key] === "on") {
+      if (form.elements[key].type === "checkbox") {
         form.elements[key].checked = true;
       } else {
         form.elements[key].value = formData[key];
